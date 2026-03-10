@@ -1,5 +1,5 @@
 
-palabra = input("Dame una palabra: \n")
+a = [10, 20, 30, 40, 50]
 
-for i in palabra:
-    print(i)
+for i,a in enumerate(a):
+    print (f"Indice {i}  -> Valor {a}")

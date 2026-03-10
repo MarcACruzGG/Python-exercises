@@ -914,6 +914,9 @@ print("Morimo \n")
 # usando la función range().
 # ==============================
 
+for i in range(1,11):
+    print(i)
+
 # ==============================
 # Ejercicio 2
 # Recorre la lista:
@@ -921,12 +924,20 @@ print("Morimo \n")
 # e imprime cada color.
 # ==============================
 
+cadena = ["Rojo", "Azul", "Verde"]
+for color in cadena:
+    print(color)
+
 # ==============================
 # Ejercicio 3
 # Recorre la palabra "Python"
 # e imprime cada letra
 # en una línea.
 # ==============================
+
+cadena = "Python"
+for caracter in cadena:
+    print(caracter)
 
 # ==============================
 # Ejercicio 4
@@ -936,11 +947,20 @@ print("Morimo \n")
 # multiplicado por 2.
 # ==============================
 
+numeros = [5, 10, 15, 20]
+for indice,numero in enumerate(numeros):
+    numeros[indice] *= 2
+print(numeros)
+
 # ==============================
 # Ejercicio 5
 # Usa range() para imprimir
 # los números del 1 al 20.
 # ==============================
+
+for i in range(1,21):
+    print(i)
+
 
 # ==============================
 # Ejercicio 6
@@ -951,17 +971,31 @@ print("Morimo \n")
 # Posición X: Nombre
 # ==============================
 
+nombres = ["Ana", "Luis", "Pedro"]
+for i,nombres in enumerate(nombres):
+    print(f"Posicion {i}", nombres)
+
 # ==============================
 # Ejercicio 7
 # Recorre la palabra "PROGRAMAR"
 # e imprime solo las vocales.
 # ==============================
 
+palabra = "Pogramar"
+
+for letra in palabra:
+    if letra in "aeiou":
+        print(letra)
+
+
 # ==============================
 # Ejercicio 8
 # Imprime los números
 # del 10 al 1 usando range().
 # ==============================
+
+for i in range(10,0, -1):
+    print(i)
 
 # ==============================
 # Ejercicio 9
@@ -970,10 +1004,175 @@ print("Morimo \n")
 # e imprime cuáles son
 # múltiplos de 3.
 # ==============================
+numeros = [3, 6, 9, 12, 15]
 
+for i in numeros:
+    if i % 3 == 0:
+        print (i)
 # ==============================
 # Ejercicio 10
 # Pide al usuario una palabra
 # e imprime cada letra
 # usando un bucle for.
 # ==============================
+
+palabra = input("Dame una palabra: \n")
+
+for i in palabra:
+    print(i)
+
+# ==========================================================
+# BLOQUE
+# EJERCICIOS 11 - 20
+# BUCLE FOR (ITERACIÓN AVANZADA)
+#
+# Temas:
+# - Bucle for
+# - Condicionales (if / elif / else)
+# - break / continue / pass
+# - range()
+# - enumerate()
+# - Listas y Strings
+# ==========================================================
+
+
+# ==============================
+# Ejercicio 11
+# Imprime los números del 1 al 30.
+# Si el número es múltiplo de 5
+# imprime "Multiplo de 5".
+# ==============================
+
+for i in range (1,31):
+    if i % 5 == 0:
+        print(f"{i} es multiplo de 5")
+    else:
+        print(i)
+
+# ==============================
+# Ejercicio 12
+# Recorre la palabra "Programacion".
+# Si la letra es vocal
+# imprímela.
+# ==============================
+
+a = "Programacion"
+
+for letra in a:
+    if letra in "aeiou":
+        print(letra)
+
+# ==============================
+# Ejercicio 13
+# Recorre los números del 1 al 20.
+# Si el número es par
+# imprímelo.
+# Si es impar
+# usa continue.
+# ==============================
+
+for i in range(1,21):
+    if i % 2 == 0:
+        print(i)
+    else:
+        continue
+
+# ==============================
+# Ejercicio 14
+# Recorre la lista:
+# [4, 7, 10, 15, 18]
+# e imprime solo los números
+# mayores que 10.
+# ==============================
+
+a = [4, 7, 10, 15, 18]
+for i in a:
+    if i > 10:
+        print(i)
+    else:
+        continue
+
+# ==============================
+# Ejercicio 15
+# Pide al usuario una palabra.
+# Recorre la palabra
+# e imprime cada letra
+# junto con su posición usando enumerate().
+# ==============================
+
+a = input("Dame una palabra:\n")
+
+for i in enumerate(a):
+    print (i)
+
+# ==============================
+# Ejercicio 16
+# Recorre los números del 1 al 50.
+# Si el número es 25
+# termina el bucle usando break.
+# ==============================
+
+for i in range(1,51):
+    if i == 25:
+        break
+    else:
+        print(i)
+
+# ==============================
+# Ejercicio 17
+# Recorre la lista:
+# ["Ana", "Luis", "Pedro", "Maria"]
+# e imprime cada nombre
+# en mayúsculas.
+# ==============================
+
+a = ["Ana", "Luis", "Pedro", "Maria"]
+
+for i in a:
+    print(i.upper())
+
+# ==============================
+# Ejercicio 18
+# Recorre los números del 1 al 20.
+# Si el número es divisible
+# entre 3 y 5
+# imprime "Multiplo de 3 y 5".
+# ==============================
+
+for i in range(1,21):
+    if i % 3 == 0 and i % 5 == 0:
+        print(f"{i} es multiplo de 3 o 5")
+    else:
+        print(i)
+
+
+# ==============================
+# Ejercicio 19
+# Recorre la palabra "Python".
+# Si la letra es "h"
+# usa pass.
+# Imprime todas las letras.
+# ==============================
+
+a = "Python"
+
+for i in a:
+    if i == "h":
+        pass
+    else:
+        print(i)
+
+
+# ==============================
+# Ejercicio 20
+# Recorre la lista
+# [10, 20, 30, 40, 50]
+# usando enumerate()
+# e imprime:
+# "Indice X -> Valor Y"
+# ==============================
+
+a = [10, 20, 30, 40, 50]
+
+for i,a in enumerate(a):
+    print (f"Indice {i}  -> Valor {a}")
