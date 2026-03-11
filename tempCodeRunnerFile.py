@@ -1,5 +1,9 @@
 
-a = [10, 20, 30, 40, 50]
-
-for i,a in enumerate(a):
-    print (f"Indice {i}  -> Valor {a}")
+a = []
+b = int(input("Ingresa el numero correcto\n"))
+a.append(b)
+while b != 0:
+        
+        b = int(input("Ingresa el numero correcto\n"))
+        a.append(b)
+print(a)    
