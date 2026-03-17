@@ -1176,3 +1176,316 @@ a = [10, 20, 30, 40, 50]
 
 for i,a in enumerate(a):
     print (f"Indice {i}  -> Valor {a}")
+
+# ==========================================================
+# BLOQUE DE EJERCICIOS 1 - 30
+# NIVEL: PYTHON PRINCIPIANTE - INTERMEDIO
+#
+# Temas:
+# - if / elif / else
+# - while
+# - for
+# - break / continue / pass
+# - range()
+# - enumerate()
+# - listas
+# - strings
+# - validación de datos
+# - operaciones matemáticas
+# ==========================================================
+
+
+# ==============================
+# Ejercicio 1
+# Pide un número entre 1 y 50.
+# Valida con while.
+# Luego imprime todos sus múltiplos hasta 500.
+# ==============================
+
+a = 0
+multiplo = []
+a = int(input("Ingresa un numero\n"))
+while a < 0 or a > 50:
+    a = int(input("Ingresa un numero\n"))    
+print("Guardado")
+
+multiplo = list(range(a,501,a))
+print(multiplo)
+
+# ==============================
+# Ejercicio 2
+# Pide un número positivo.
+# Imprime todos los números
+# desde 1 hasta ese número usando for.
+# ==============================
+
+a = int(input("Dame un numero\n"))
+
+for i  in range(1,a):
+    print(i)
+
+# ==============================
+# Ejercicio 3
+# Pide un número entre 1 y 10.
+# Imprime su tabla de multiplicar hasta 10.
+# ==============================
+
+a = int(input("Dame un numero\n"))
+
+for i in range(0,11):
+    i *= 10
+    print (i)
+
+
+# ==============================
+# Ejercicio 4
+# Pide números al usuario
+# hasta que ingrese 0.
+# Guarda todos los números en una lista
+# y al final imprime la lista.
+# ==============================
+
+a = []
+b = int(input("Ingresa el numero correcto\n"))
+a.append(b)
+while b != 0: 
+        b = int(input("Ingresa el numero correcto\n"))
+        a.append(b)
+print(a)    
+
+# ==============================
+# Ejercicio 5
+# Pide una palabra al usuario.
+# Imprime cada letra en una línea
+# usando un bucle for.
+# ==============================
+
+a = input("Ingresa una palabra\n")
+
+for i in a:
+    print(i)
+
+
+# ==============================
+# Ejercicio 6
+# Pide una palabra.
+# Cuenta cuántas vocales tiene
+# usando un bucle for.
+# ==============================
+
+a = input("Ingresa una palabra\n")
+contador = 0
+for i in a:
+    if i in "aeiou":
+        contador += 1
+print(contador)
+
+# ==============================
+# Ejercicio 7
+# Pide 5 números al usuario
+# y guárdalos en una lista.
+# Luego imprime el número mayor.
+# ==============================
+
+numeros = []
+print("Por favor, ingresa 5 números:")
+for i in range(5):
+    dato = int(input(f"Número {i+1}: "))
+    numeros.append(dato)
+mayor = max(numeros)
+print("---")
+print(f"Tu lista es: {numeros}")
+print(f"El número mayor es: {mayor}")
+
+
+# ==============================
+# Ejercicio 8
+# Pide un número positivo.
+# Imprime la suma de todos los números
+# desde 1 hasta ese número.
+# ==============================
+
+a = int(input("Dame un numero\n"))
+palabras = []
+
+for i  in range(1,a):
+    i += i
+print(i)
+
+
+# ==============================
+# Ejercicio 9
+# Pide una palabra.
+# Imprime la palabra invertida
+# usando un bucle for.
+# ==============================
+
+a = input("Dame una palabra\n")
+
+for i in a:
+    b = a[::-1]
+print(b)
+
+# ==============================
+# Ejercicio 10
+# Recorre los números del 1 al 100.
+# Imprime solo los números pares.
+# ==============================
+
+
+
+
+# ==============================
+# Ejercicio 11
+# Recorre los números del 1 al 50.
+# Si el número es múltiplo de 7
+# imprime "Multiplo de 7".
+# ==============================
+
+
+# ==============================
+# Ejercicio 12
+# Pide una palabra.
+# Imprime cada letra junto con
+# su índice usando enumerate().
+# ==============================
+
+
+# ==============================
+# Ejercicio 13
+# Pide números al usuario
+# hasta que ingrese un número negativo.
+# Luego imprime cuántos números ingresó.
+# ==============================
+
+
+# ==============================
+# Ejercicio 14
+# Pide un número.
+# Imprime su factorial usando for.
+# ==============================
+
+
+# ==============================
+# Ejercicio 15
+# Recorre la lista:
+# [12, 5, 8, 130, 44]
+# e imprime solo los números mayores a 10.
+# ==============================
+
+
+# ==============================
+# Ejercicio 16
+# Recorre los números del 1 al 30.
+# Si el número es múltiplo de 3
+# usa continue para saltarlo.
+# ==============================
+
+
+# ==============================
+# Ejercicio 17
+# Recorre los números del 1 al 50.
+# Si el número es 25
+# termina el bucle con break.
+# ==============================
+
+
+# ==============================
+# Ejercicio 18
+# Pide una palabra.
+# Imprime solo las consonantes.
+# ==============================
+
+
+# ==============================
+# Ejercicio 19
+# Crea una lista con 10 números
+# ingresados por el usuario.
+# Imprime la suma total.
+# ==============================
+
+
+# ==============================
+# Ejercicio 20
+# Pide una palabra.
+# Verifica si es un palíndromo
+# (se lee igual al derecho y al revés).
+# ==============================
+
+
+# ==============================
+# Ejercicio 21
+# Imprime los números del 1 al 100.
+# Si el número es múltiplo de 5
+# imprime "Cinco".
+# ==============================
+
+
+# ==============================
+# Ejercicio 22
+# Recorre la palabra "Programacion".
+# Cuenta cuántas letras tiene.
+# ==============================
+
+
+# ==============================
+# Ejercicio 23
+# Pide números al usuario
+# hasta que ingrese 0.
+# Imprime el número mayor ingresado.
+# ==============================
+
+
+# ==============================
+# Ejercicio 24
+# Recorre una lista de precios
+# [10, 25, 30, 15, 50]
+# e imprime cada precio con IVA (16%).
+# ==============================
+
+
+# ==============================
+# Ejercicio 25
+# Imprime los números del 1 al 20
+# junto con su cuadrado.
+# ==============================
+
+
+# ==============================
+# Ejercicio 26
+# Pide una frase al usuario.
+# Cuenta cuántos espacios tiene.
+# ==============================
+
+
+# ==============================
+# Ejercicio 27
+# Recorre los números del 1 al 100.
+# Imprime solo los múltiplos de 4.
+# ==============================
+
+
+# ==============================
+# Ejercicio 28
+# Pide 5 palabras al usuario.
+# Guárdalas en una lista
+# e imprime la lista completa.
+# ==============================
+
+
+# ==============================
+# Ejercicio 29
+# Recorre la lista
+# ["Python", "Java", "C", "Go", "Rust"]
+# e imprime solo las palabras
+# que tengan más de 3 letras.
+# ==============================
+
+
+# ==============================
+# Ejercicio 30
+# Pide números al usuario
+# hasta que escriba 0.
+# Imprime cuántos números positivos
+# y cuántos negativos se ingresaron.
+# ==============================
