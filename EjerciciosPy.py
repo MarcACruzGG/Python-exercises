@@ -1293,7 +1293,6 @@ for i in range(5):
     dato = int(input(f"Número {i+1}: "))
     numeros.append(dato)
 mayor = max(numeros)
-print("---")
 print(f"Tu lista es: {numeros}")
 print(f"El número mayor es: {mayor}")
 
@@ -1332,7 +1331,9 @@ print(b)
 # Imprime solo los números pares.
 # ==============================
 
-
+for i in range(1,101):
+    if i % 2 == 0:
+        print(f"{i} es par")
 
 
 # ==============================
@@ -1342,6 +1343,10 @@ print(b)
 # imprime "Multiplo de 7".
 # ==============================
 
+for i in range(1,51):
+    if i % 7 == 0:
+        print(f"{i} es par")
+
 
 # ==============================
 # Ejercicio 12
@@ -1350,6 +1355,9 @@ print(b)
 # su índice usando enumerate().
 # ==============================
 
+a = input("Dane una palabra\n")
+for i in enumerate(a):
+    print (i)
 
 # ==============================
 # Ejercicio 13
@@ -1358,6 +1366,14 @@ print(b)
 # Luego imprime cuántos números ingresó.
 # ==============================
 
+a = []
+b = int(input("Dame un numero negativo\n"))
+a.append(b)
+while b > 0: 
+        b = int(input("Que sea negativo, dije\n"))
+        a.append(b)
+print(a)    
+
 
 # ==============================
 # Ejercicio 14
@@ -1365,6 +1381,12 @@ print(b)
 # Imprime su factorial usando for.
 # ==============================
 
+n = int(input("Dame un número: "))
+factorial = 1
+for i in range(1, n + 1):
+    factorial *= i
+
+print(f"El factorial de {n} es {factorial}")
 
 # ==============================
 # Ejercicio 15
@@ -1372,6 +1394,12 @@ print(b)
 # [12, 5, 8, 130, 44]
 # e imprime solo los números mayores a 10.
 # ==============================
+
+a = [12, 5, 8, 130, 44]
+
+for i in a:
+    if i > 10:
+        print (i)
 
 
 # ==============================
@@ -1381,6 +1409,11 @@ print(b)
 # usa continue para saltarlo.
 # ==============================
 
+for i in range(1, 30):
+    if i % 3 == 0:
+        continue
+    else:
+        print(i)
 
 # ==============================
 # Ejercicio 17
@@ -1389,12 +1422,25 @@ print(b)
 # termina el bucle con break.
 # ==============================
 
+for i in range(1, 51):
+    if i == 25 :
+        break
+    else:
+        print(i)
+
 
 # ==============================
 # Ejercicio 18
 # Pide una palabra.
 # Imprime solo las consonantes.
 # ==============================
+
+a = input("Dame una palabra\n")
+
+
+for i in a:
+    if i in "B, b, C, c, D, d, F, f, G, g, H, h, J, j, K, k, L, l, M, m, N, n, Ñ, ñ, P, p, Q, q, R, r, S, s, T, t, V, v, W, w, X, x, Y, y, Z, z ":
+        print(i)
 
 
 # ==============================
@@ -1404,6 +1450,14 @@ print(b)
 # Imprime la suma total.
 # ==============================
 
+numeros = []
+for i in range(10):
+    dato = int(input(f"Ingresa el número {i + 1}: "))
+    numeros.append(dato)
+suma_total = sum(numeros)
+
+print(f"Tu lista es: {numeros}")
+print(f"La suma total es: {suma_total}")
 
 # ==============================
 # Ejercicio 20
@@ -1412,7 +1466,14 @@ print(b)
 # (se lee igual al derecho y al revés).
 # ==============================
 
-
+while True:
+    a = input("Dame una palabra\n").lower().replace(" ", "")
+    
+    if a == a[::-1]:
+        print("Es palindromo asombroso la realidad")
+    else:
+        print("Intentalo de nuevo")
+    break
 # ==============================
 # Ejercicio 21
 # Imprime los números del 1 al 100.
@@ -1420,6 +1481,11 @@ print(b)
 # imprime "Cinco".
 # ==============================
 
+for i in range(1,101):
+    if i % 5 == 0:
+        print("Cinco")
+    else:
+        print (i)
 
 # ==============================
 # Ejercicio 22
@@ -1427,6 +1493,9 @@ print(b)
 # Cuenta cuántas letras tiene.
 # ==============================
 
+a = ("Programacion")
+for i in enumerate(a):
+    print(i)
 
 # ==============================
 # Ejercicio 23
@@ -1435,6 +1504,15 @@ print(b)
 # Imprime el número mayor ingresado.
 # ==============================
 
+mayor = 0
+b = int(input("Ingresa un numero\n"))
+
+while b != 0:
+    if b > mayor:
+        mayor = b
+    b = int(input("Ingresa otro numero\n"))
+
+print(mayor)
 
 # ==============================
 # Ejercicio 24
@@ -1443,6 +1521,11 @@ print(b)
 # e imprime cada precio con IVA (16%).
 # ==============================
 
+precios = [10, 25, 30, 15, 50]
+for i in precios:
+    precio_con_iva = i * 1.16
+    print(f"Precio original: {i}, Precio con IVA: {precio_con_iva:.2f}")
+
 
 # ==============================
 # Ejercicio 25
@@ -1450,12 +1533,23 @@ print(b)
 # junto con su cuadrado.
 # ==============================
 
+b = 0
+for i in range(1,21):
+    b = i **2
+    print [i,b]
 
 # ==============================
 # Ejercicio 26
 # Pide una frase al usuario.
 # Cuenta cuántos espacios tiene.
 # ==============================
+
+a = input("Dame una frase\n")
+contador = 0
+for i in a:
+    if i == " ":
+        contador += 1   
+print(contador)
 
 
 # ==============================
@@ -1464,6 +1558,11 @@ print(b)
 # Imprime solo los múltiplos de 4.
 # ==============================
 
+for i in range(1,101):
+    if i % 4 == 0:
+        print(i)
+    else:
+        pass
 
 # ==============================
 # Ejercicio 28
@@ -1472,6 +1571,11 @@ print(b)
 # e imprime la lista completa.
 # ==============================
 
+palabras = []
+for i in range(5):
+    palabra = input(f"Palabra {i + 1}: ")
+    palabras.append(palabra)
+print(palabras)
 
 # ==============================
 # Ejercicio 29
@@ -1481,6 +1585,13 @@ print(b)
 # que tengan más de 3 letras.
 # ==============================
 
+a = ["Python", "Java", "C", "Go", "Rust"]
+
+for i in a:
+    if i in range(3):
+        print(i)
+    else:
+        pass
 
 # ==============================
 # Ejercicio 30
@@ -1489,3 +1600,16 @@ print(b)
 # Imprime cuántos números positivos
 # y cuántos negativos se ingresaron.
 # ==============================
+
+a = int(input("Dame un numero\n"))
+positivos = 0   
+negativos = 0
+while a != 0:
+    if a > 0:
+        positivos += 1
+    elif a < 0:
+        negativos += 1
+    a = int(input("Dame otro numero\n"))
+print(f"Números positivos: {positivos}")
+print(f"Números negativos: {negativos}")
+
